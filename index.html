@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Waisze Lam</title>
+		<!-- FontAwesome Icons -->
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<!--Google Fonts -->
+		<link href = "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300" rel="stylesheet" type ="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!--jQuery-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+		<!-- Custom Javascript -->
+		<script src="js/script.js"></script>
+
+		<!--Control layout on mobile-->
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+
+	<body>		
+		<header class="header">
+			<div class="headerContainer">
+				<div class="logo" id="logo"><a href="#"><b>W</b>AISZE <b>L</b>AM</a></div>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="contentContain">
+				<!--<div id="contentFocus">
+					<div class="buttonContent active" id="about"></div>
+					<div class="buttonContent" id="IBM"></div>
+					<div class="buttonContent" id="OEC"></div>
+					<div class="buttonContent" id="evento"></div>
+					<div class="buttonContent" id="spaceapps"></div>
+					<div class="buttonContent" id="waiszecom"></div>
+					<div class="buttonContent" id="hobbies"></div>
+					<div class="buttonContent" id="contact"></div>
+					
+					<div class="clearFloat"></div>
+				</div>
+
+				<div class="bubble" id="bubbleAbout" data-link="#about">
+					<div class="thumbnail">
+						<img src="images/me.jpg"></img>
+					</div>
+				</div>
+				<div class="bubble" id="bubbleHobbies" data-link="#hobbies">
+					<div class="thumbnail">
+						<div class="hobbyContain">
+							<img src="images/hobbies/baking.png"></img>
+							<img src="images/hobbies/bike.png"></img>
+							<img src="images/hobbies/eating.png"></img>
+							<img src="images/hobbies/running.png"></img>
+							<img src="images/hobbies/skiing.png"></img>
+							<img src="images/hobbies/tennis.png"></img>
+							<img src="images/hobbies/drawing.png"></img>
+							<img src="images/hobbies/travel.png"></img>
+							<img src="images/hobbies/commuting.png"></img>
+
+						</div>
+					</div>
+				</div>
+				<div class="bubble active" id="bubbleIBM" data-link="#IBM">
+					<div class="thumbnail">
+						<img src="images/IBM.jpg"></img>
+					</div>
+				</div>
+				<div class="bubble" id="bubbleOEC" data-link="#OEC">
+					<div class="thumbnail">
+						<img src="images/OEC2012.png"></img>
+					</div>
+
+				</div>
+				<div class="bubble" id="bubbleEvento" data-link="#evento">
+					<div class="thumbnail">
+						<img src="images/evento.png"></img>
+					</div>
+				</div>
+				<div class="bubble" id="bubbleSpace" data-link="#spaceapps">
+					<div class="thumbnail">
+						<img src="images/spaceapps.png"></img>
+					</div>
+				</div>
+				<div class="bubble" id="bubbleCom" data-link="#waiszecom">
+					<div class="thumbnail">
+						<img src="images/waiszecom.png"></img>
+					</div>
+				</div>
+-->
+
+				<div class="row" id="gridContain">
+					<div class="col3">
+
+						<div class="gridItem active tall">
+							<img src="images/grid/me2.png"></img>
+							<div class="title">About Me</div>
+							<div class="detail">
+								<center><b>Waisze Lam</b></center><br>
+								<b>Noun</b> [ w&#299; z&#275; ]<br>
+								<b>1.</b> Web Developer.<br>
+								<b>2.</b> Software Engineer.<br>
+								<b>3.</b> Designer.<br>
+								<br>
+								<p>Welcome! I'm a fresh BASc in Computer Engineering at the University of Toronto, seeking new opportunities in the field of Web Development.</p><br>
+								<p>Grab a copy of my resume!</p>
+								<br>
+								<center><a href="waisze.pdf" target="_blank">RESUME</a></center>
+							</div>
+						</div>
+
+						<div class="gridItem">
+							<img src="images/grid/travel.png"></img>
+							<div class="title">Hobbies</div>
+							<div class="detail">
+								<p>When I'm not experimenting around with a new project, you can usually catch me training to run 10k, making belgium waffles or bundled up in a ball of blankets.</p><br>
+								<p>I also enjoy playing tennis with my siblings, skiing with friends and scouting out that new restaurant down the street.</p><br>
+								<p>I love travelling! From Edinburgh to Varadero, encountering new cultures, faces and amazing views is something I look forward to every year.</p>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="col3">
+						<div class="gridItem">
+							<img src="images/grid/evento2.png"></img>
+							<div class="title">Evento</div>
+							<div class="detail">
+								<p>Evento is a Toronto-based events aggregate application that points users towards a suitable activity through machine learning. </p><br>
+								<p>The project was implemented using NodeJS, MongoDB and Angular. The UI was done through a combination of HTML, CSS and Javascript.</p><br>
+								<p>It's also live. Check it out!</p><br>
+								<center><a href="http://eventoronto.com/" target="_blank">LIVE SITE</a></center>
+							</div>
+						</div>
+						<div class="gridItem tall">
+							<img src="images/grid/pong2.png"></img>
+							<div class="title">Accelerometer Pong</div>
+							<div class="detail">
+								<p>A two-player Pong game utilizing two Altera DE0 accelerometers to control each paddle with responsive 1:1 motion. Each DE0 connected to an Altera DE2 board with custom SoC loaded in order to interface the data flow between accelerometers, VGA display and the processor.</p><br>
+								<p>This project really sparked my interest in creating software applications for unique hardware such as the Oculus Rift and SoftKinetic depth camera.</p><br>
+								<p>Watch us play!</p><br>
+								<center><a href="https://www.youtube.com/watch?v=hPnaxK-VqGk" target="_blank">YOUTUBE</a></center>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col3">
+
+						<div class="gridItem">
+							<img style="height:150px; width:100%; background:rgba(250,250,250,0.8);"src="images/grid/IBM_logo.svg"></img>
+							<div class="title">IBM</div>
+							<div class="detail">
+								<p>Looking to apply the knowledge I had gained from OEC2012, I was granted a two year internship at IBM.</p><br>
+								<p>My job here was to handle front-end web development of responsive UIs for e-commerce store models. I gained valuable experience when building products for massive audiences; supporting for many devices, browsers and languages was essential.</p>
+							</div>
+						</div>
+
+						<div class="gridItem">
+							<img src="images/grid/OEC.png"></img>
+							<div class="title">OEC2012</div>
+							<div class="detail">
+								<p>The Ontario Engineering Competition 2012 is a annual provincial event between engineering universities. It was also my first professional foray into web development!</p><br>
+								<p>My responsibilies as the Vice Chair of Communications meant that I oversaw outgoing messages and managed the official competitions website.</p><br>
+								<p>I learned a lot about web design and development during my one year stay at OEC2012, and I attribute my passion and drive as a web developer to this experience.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col3">
+						<div class="gridItem">
+							<img src="images/grid/spaceapps2.png"></img>
+							<div class="title">SpaceApps Hackathon</div>
+							<div class="detail">
+								<p>Hackathons are a really good way to kick yourself into high gear. With only a limited amount of time and a ton of coffee, you can find yourself building amazing applications in no time.</p><br>
+								<p>For this NASA themed hackathon, my team and I coded a virtual reality satellite tracker. Created using Unity3D, Blender, and the Oculus Rift, it allows the user to view their surroundings from the perspective of multiple satellites, including the ISS and the moon.</p><br>
+								<p>Take a look!</p><br>
+								<center><a href="https://www.youtube.com/watch?v=iBdyOD_ZrJk" target="_blank">YOUTUBE</a></center>
+								<center><a href="https://github.com/Waisze/spaceapps" target="_blank">GITHUB</a></center>
+							</div>
+						</div>
+
+						<div class="gridItem" id="">
+							<img src="images/grid/waiszecom.png"></img>
+							<div class="title">WaiszeLam.com</div>
+							<div class="detail">
+								<p>Not too long ago, I decided to apply what I had learned as a web developer into making a personal website. What is a web developer without his own website, after all?</p><br>
+								<p>In the end, I came up with a simple responsive design that I felt was visually appealing and properly representative of an interactive resume.</p><br>
+								<p>I could talk about it for a while, but seeing it for yourself gets the point across quicker.</p><br>
+								<center><a href="http://waiszelam.com/" target="_blank">RECURSION</a></center>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="clearFloat"></div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footerContainer">
+				<div class="row">
+					<div class="col3 icon">
+						<a href="mailto:lam.waisze@gmail.com" target="_blank">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</div>
+					<div class="col3 icon">
+						<a href="waisze.pdf" target="_blank">
+							<i class="fa fa-file-text"></i>
+						</a>
+					</div>
+					<div class="col3 icon">
+						<a href="http://linkedin.waiszelam.com" target="_blank">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+					<div class="col3 icon">
+						<a href="https://github.com/Waisze" target="_blank">
+							<i class="fa fa-github"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>	
+</html>
+
+

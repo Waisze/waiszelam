@@ -1,0 +1,357 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*General Implementations*/
+html {
+	width:100%;
+	height:100%;
+	background: url('images/fabric5.jpg');
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	font-family: "Lato", sans-serif;
+	text-decoration: none;
+	color: #6d6d6d;
+	cursor: pointer;
+}
+ol, ul { list-style: none; }
+b { font-weight: bold; }
+.clearFloat { clear: both; }
+.contentContainer { 
+	position: relative; 
+	width: 100%;
+	padding-top: 100px;
+}
+
+/*Grid Implementation*/
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.row {
+	clear: both;
+}
+
+.row > * {
+	float:left;
+}
+
+.col12 	{ width: 100%; 		}
+.col11	{ width: 91.6666%; 	}
+.col10 	{ width: 83.3333%; 	}
+.col9 	{ width: 75%;	 	}
+.col8 	{ width: 66.6666%; 	}
+.col7 	{ width: 58.3333%; 	}
+.col6 	{ width: 50%;	 	}
+.col5 	{ width: 41.6666%; 	}
+.col4 	{ width: 33.3333%; 	}
+.col3 	{ width: 25%; 		}
+.col2 	{ width: 16.6666%; 	}
+.col1 	{ width: 8.3333%; 	}
+
+.content-box {
+
+}
+
+/*CSS Styles*/
+
+header {
+	height: 50px;
+	background:rgba(93,93,93,0.8);
+	//background: url('images/cloth.png');
+	z-index: 0;
+}
+
+	.headerContainer {
+		max-width:1024px;
+		margin: 0 auto;
+	}
+
+	header .logo {
+		color: #FFFFFF;
+		line-height: 50px;
+		font-size: 20px;
+		margin: 0 auto;
+		text-align:center;
+		cursor:pointer;
+		font-family: Lato;
+	}
+
+		header .logo a {
+			color: #FFFFFF;
+		}
+
+		header .logo b:first-child {
+			margin-right:-2px;
+		}
+
+		header .logo b{
+			color: #FFFFFF;
+			line-height: 50px;
+			font-size: 25px;
+			font-weight: normal;
+		}
+
+.contentContain {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+#contentFocus {
+	float:left;
+}
+
+.contentContain {
+	margin-top: 50px;
+	margin-bottom:70px;
+}
+
+.gridItem {
+	background:rgba(250,250,250,0.4);
+	transition: 0.3s;
+	margin: 1px auto 0 auto;
+	overflow:hidden;
+	z-index:0;
+	position:relative;
+	max-width:256px;
+	font-family:Lato;
+}
+
+.hobbyContain {
+	background: rgba(200,200,220,0.6);
+	width:100%;
+	height:160px;
+	text-align:center;
+	margin-top: -10px;
+}
+
+.gridItem img {
+	width:100%;
+	z-index:0;
+	float:left;
+}
+
+.gridItem .title {
+	position:absolute;
+	transition: 0.4s;
+	height:40px;
+	padding-left:5%;
+	width:95%;
+	line-height: 40px;
+	color:#FFFFFF;
+	z-index:1;
+	font-weight:normal;
+	display:block;
+	top:150px;
+	background:rgba(50,50,50,0);
+}
+
+.gridItem.tall .title {
+	top:200px;
+}
+
+.gridItem:hover .title,
+.gridItem.active .title  {
+	top:110px;
+	background:rgba(50,50,50,0.8);
+}
+
+.gridItem.tall:hover .title,
+.gridItem.active.tall .title  {
+	top:160px;
+	background:rgba(50,50,50,0.8);
+}
+
+.gridItem .detail {
+	transition: 0.4s;
+	max-height:0;
+	width:90%;
+	float:left;
+	color:rgba(255,255,255,0);
+}
+
+.gridItem.active .detail{
+	max-height:500px;
+	padding:10px 5%;
+	color:rgba(80,80,80,1);
+}
+
+	.gridItem .detail a {
+		line-height:30px;
+		background: rgba(80,80,80,1);
+		color:white;
+		font-size: 14px;
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+.buttonContent {
+	transition: 0.5s;
+	width:0;
+	height:0;
+	background:rgba(100,100,100,0.2);
+	float:left;
+	margin:0;
+	border-radius: 10px;
+}
+
+.buttonContent.active {
+	width: 600px;
+	height:430px;
+	margin: 10px 0 0 10px;
+}
+
+.bubble { 
+	transition: 0.5s;
+	position:relative;
+	width: 100px; 
+	height: 100px;
+	float:left;
+	margin: 20px 0 0 20px;
+	border-radius: 50px;
+	overflow:hidden;
+	//border: 1px solid rgba(0,72,82,0.3);
+	box-shadow: 3px 3px 3px -2px #888888;
+}
+
+	.bubble:before { /* adds the white highlight on the top left of the bubble */
+	   content:"";
+	   display:block;
+	   position:absolute;
+	   width:50px;
+	   height:50px;
+	   top:7px;
+	   left:7px;
+	   border-radius: 75px 25px;
+	   box-shadow:inset 5px 5px 25px rgba(255,255,255,.6);
+	}
+
+	.bubble:after { /* adds the darker lowlight on the bottom of the bubble */
+	   content:"";
+	   display:block;
+	   position:absolute;
+	   width:100px;
+	   height:100px;
+	   border-radius:100px;
+	   box-shadow:inset 0px -10px 10px rgba(0,0,0,.05);
+	}
+
+	.bubble .thumbnail {
+		transition: 0.5s;
+		float:left;
+		width:100px;
+		height:100px;
+		border-radius:50px;
+		overflow: hidden;
+		opacity:1;
+	}
+
+		.bubble.active .thumbnail{
+		}
+		
+		.bubble .thumbnail img {
+			width:100%;
+		}
+#bubbleHobbies {
+	background:#FFFFFF;
+}
+#bubbleHobbies .thumbnail img {
+	width:32px;
+	float:left;
+}
+/*
+#bubbleIBM .thumbnail { background: #FFF; }
+#bubbleIBM img{ margin-top: 28px; }*/
+
+#bubbleOEC .thumbnail { background: #FFF; }
+#bubbleOEC img{ margin-top: 7px; }
+#bubbleOEC .header {
+	margin-top: 21px;
+}
+
+
+footer {
+	position:fixed;
+	bottom:0;
+	left: 0;
+	height: 50px;
+	width:100%;
+	background:rgba(93,93,93,0.8);
+	z-index: 0;
+}
+
+	.footerContainer {
+		max-width:1024px;
+		margin: 0 auto;
+		text-align:center;
+		line-height:50px;
+	}
+
+		.footerContainer .icon a {
+			font-size: 30px;
+			color: #FFF;
+		}
+
+			.footerContainer .icon a:hover {
+				color:#72d0b9;
+			}
+
+@media(max-width: 1035px) {
+	.contentContain {
+		max-width:512px;
+	}
+	#gridContain .col3 {
+		width:50%;
+	}
+	.gridItem .title {
+		top:110px;
+		background:rgba(50,50,50,0.8);
+	}
+	.gridItem.tall .title {
+		top:160px;
+		background:rgba(50,50,50,0.8);
+	}
+}
+
+@media(max-width: 520px) {
+	.contentContain {
+		max-width:256px;
+	}
+	#gridContain .col3 {
+		width:100%;
+	}
+	.gridItem {
+		margin-bottom:10px;
+	}
+}
