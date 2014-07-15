@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 html {
 	width:100%;
 	height:100%;
-	background: url('images/fabric5.jpg');
+	//background: url('images/fabric5.jpg');
+	background: #c7d8e5;
 }
 table {
 	border-collapse: collapse;
@@ -88,7 +89,7 @@ b { font-weight: bold; }
 
 header {
 	height: 50px;
-	background:rgba(93,93,93,0.8);
+	background:rgba(50,50,50,0.8);
 	//background: url('images/cloth.png');
 	z-index: 0;
 }
@@ -133,14 +134,15 @@ header {
 }
 
 .contentContain {
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom:70px;
 }
 
 .gridItem {
-	background:rgba(250,250,250,0.4);
+	background:rgba(250,250,250,0.7);
+	background:#eaf0f5;
 	transition: 0.3s;
-	margin: 1px auto 0 auto;
+	margin: 10px 0 0 11px;
 	overflow:hidden;
 	z-index:0;
 	position:relative;
@@ -169,7 +171,7 @@ header {
 	padding-left:5%;
 	width:95%;
 	line-height: 40px;
-	color:#FFFFFF;
+	color:rgba(255,255,255,0);
 	z-index:1;
 	font-weight:normal;
 	display:block;
@@ -183,28 +185,28 @@ header {
 
 .gridItem:hover .title,
 .gridItem.active .title  {
-	top:110px;
+	top:105px;
 	background:rgba(50,50,50,0.8);
+	color:rgba(255,255,255,1);
 }
 
 .gridItem.tall:hover .title,
 .gridItem.active.tall .title  {
-	top:160px;
+	top:152px;
 	background:rgba(50,50,50,0.8);
 }
 
 .gridItem .detail {
-	transition: 0.4s;
-	max-height:0;
+	transition: 0.8s;
+	max-height:200px;
+	padding:10px 5%;
 	width:90%;
 	float:left;
-	color:rgba(255,255,255,0);
+	color:rgba(80,80,80,1);
 }
 
 .gridItem.active .detail{
 	max-height:500px;
-	padding:10px 5%;
-	color:rgba(80,80,80,1);
 }
 
 	.gridItem .detail a {
@@ -215,6 +217,27 @@ header {
 		padding: 5px;
 		border-radius: 5px;
 	}
+
+
+.gridItem .showMoreGrad {
+	cursor: pointer;
+	transition: 0.8s;
+	height: 150px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,240,245,0)), color-stop(100%,rgba(234,240,245,1)));
+	line-height: 270px;
+	color: rgba(100,100,100,1);
+	text-align: center;
+	font-size:12px;
+}
+
+.gridItem.active .showMoreGrad {
+	background:none;
+	color: rgba(100,100,100,0);
+}
+
 
 .buttonContent {
 	transition: 0.5s;
@@ -302,12 +325,10 @@ header {
 
 
 footer {
-	position:fixed;
-	bottom:0;
-	left: 0;
+	position:relative;
 	height: 50px;
 	width:100%;
-	background:rgba(93,93,93,0.8);
+	background:rgba(50,50,50,0.8);
 	z-index: 0;
 }
 
@@ -321,10 +342,12 @@ footer {
 		.footerContainer .icon a {
 			font-size: 30px;
 			color: #FFF;
+			transition:0.2s;
 		}
 
 			.footerContainer .icon a:hover {
-				color:#72d0b9;
+				color:rgb(147,180,205);
+				font-size:35px;
 			}
 
 @media(max-width: 1035px) {
