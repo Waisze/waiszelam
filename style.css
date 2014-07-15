@@ -358,12 +358,14 @@ footer {
 		width:50%;
 	}
 	.gridItem .title {
-		top:110px;
+		top:105px;
 		background:rgba(50,50,50,0.8);
+		color:rgba(255,255,255,1);
 	}
 	.gridItem.tall .title {
-		top:160px;
+		top:152px;
 		background:rgba(50,50,50,0.8);
+		color:rgba(255,255,255,1);
 	}
 }
 
