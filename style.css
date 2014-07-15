@@ -220,6 +220,7 @@ header {
 
 
 .gridItem .showMoreGrad {
+	pointer-events:none
 	cursor: pointer;
 	transition: 0.8s;
 	height: 150px;
@@ -236,6 +237,7 @@ header {
 .gridItem.active .showMoreGrad {
 	background:none;
 	color: rgba(100,100,100,0);
+	bottom: -150px;
 }
 
 
