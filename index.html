@@ -22,7 +22,38 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 	</head>
 
-	<body>		
+	<body>
+
+		<style>
+			.chatHead {
+				width:50px;
+				height:50px;
+				border-radius: 25px;
+				transition: 1s;
+				z-index:10;
+				position: absolute;
+				left: 0;
+				background:url('images/grid/me2.png');
+				background-size: 65px 50px;
+				background-position: -10px;
+			}
+			.iframe {
+				position: absolute;
+				left:0;
+				z-index:9;
+				transition: 1s;
+				width: 0px;
+				height: 0px;
+				border-radius: 25px 10px 10px 10px;
+			}
+			.iframe.active {
+				width: 323px;
+				height: 456px;
+			}
+		</style>
+		<div class="chatHead"></div>
+		<iframe class="iframe" src="http://54.187.251.88/client/"></iframe>
+
 		<header class="header">
 			<div class="headerContainer">
 				<div class="logo" id="logo"><a href="#"><b>W</b>AISZE <b>L</b>AM</a></div>
