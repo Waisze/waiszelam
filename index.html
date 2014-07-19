@@ -51,6 +51,13 @@
 				height: 456px;
 			}
 		</style>
+		<script>
+			$(function() {
+			    $('.chatHead').on('click', function() {
+			        $('.iframe').toggleClass('active');
+			    });
+			});
+		</script>
 		<div class="chatHead"></div>
 		<iframe class="iframe" src="http://54.187.251.88/client/"></iframe>
 
