@@ -24,43 +24,6 @@
 
 	<body>
 
-		<style>
-			.chatHead {
-				width:50px;
-				height:50px;
-				border-radius: 25px;
-				transition: 1s;
-				z-index:10;
-				position: absolute;
-				left: 0;
-				background:url('images/grid/me2.png');
-				background-size: 65px 50px;
-				background-position: -10px;
-			}
-			.iframe {
-				position: absolute;
-				left:0;
-				z-index:9;
-				transition: 1s;
-				width: 0px;
-				height: 0px;
-				border-radius: 25px 10px 10px 10px;
-			}
-			.iframe.active {
-				width: 323px;
-				height: 456px;
-			}
-		</style>
-		<script>
-			$(function() {
-			    $('.chatHead').on('click', function() {
-			        $('.iframe').toggleClass('active');
-			    });
-			});
-		</script>
-		<div class="chatHead"></div>
-		<iframe class="iframe" src="http://54.187.251.88/client/"></iframe>
-
 		<header class="header">
 			<div class="headerContainer">
 				<div class="logo" id="logo"><a href="#"><b>W</b>AISZE <b>L</b>AM</a></div>
@@ -69,67 +32,6 @@
 
 		<div class="content">
 			<div class="contentContain">
-				<!--<div id="contentFocus">
-					<div class="buttonContent active" id="about"></div>
-					<div class="buttonContent" id="IBM"></div>
-					<div class="buttonContent" id="OEC"></div>
-					<div class="buttonContent" id="evento"></div>
-					<div class="buttonContent" id="spaceapps"></div>
-					<div class="buttonContent" id="waiszecom"></div>
-					<div class="buttonContent" id="hobbies"></div>
-					<div class="buttonContent" id="contact"></div>
-					
-					<div class="clearFloat"></div>
-				</div>
-
-				<div class="bubble" id="bubbleAbout" data-link="#about">
-					<div class="thumbnail">
-						<img src="images/me.jpg"></img>
-					</div>
-				</div>
-				<div class="bubble" id="bubbleHobbies" data-link="#hobbies">
-					<div class="thumbnail">
-						<div class="hobbyContain">
-							<img src="images/hobbies/baking.png"></img>
-							<img src="images/hobbies/bike.png"></img>
-							<img src="images/hobbies/eating.png"></img>
-							<img src="images/hobbies/running.png"></img>
-							<img src="images/hobbies/skiing.png"></img>
-							<img src="images/hobbies/tennis.png"></img>
-							<img src="images/hobbies/drawing.png"></img>
-							<img src="images/hobbies/travel.png"></img>
-							<img src="images/hobbies/commuting.png"></img>
-
-						</div>
-					</div>
-				</div>
-				<div class="bubble active" id="bubbleIBM" data-link="#IBM">
-					<div class="thumbnail">
-						<img src="images/IBM.jpg"></img>
-					</div>
-				</div>
-				<div class="bubble" id="bubbleOEC" data-link="#OEC">
-					<div class="thumbnail">
-						<img src="images/OEC2012.png"></img>
-					</div>
-
-				</div>
-				<div class="bubble" id="bubbleEvento" data-link="#evento">
-					<div class="thumbnail">
-						<img src="images/evento.png"></img>
-					</div>
-				</div>
-				<div class="bubble" id="bubbleSpace" data-link="#spaceapps">
-					<div class="thumbnail">
-						<img src="images/spaceapps.png"></img>
-					</div>
-				</div>
-				<div class="bubble" id="bubbleCom" data-link="#waiszecom">
-					<div class="thumbnail">
-						<img src="images/waiszecom.png"></img>
-					</div>
-				</div>
--->
 
 				<div class="row" id="gridContain">
 					<div class="col3">
