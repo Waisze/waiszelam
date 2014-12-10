@@ -206,7 +206,7 @@ header {
 }
 
 .gridItem.active .detail{
-	max-height:500px;
+	max-height:570px;
 }
 
 	.gridItem .detail a {
